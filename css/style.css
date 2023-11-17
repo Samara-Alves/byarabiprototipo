@@ -102,11 +102,13 @@ ol {
 	margin: 0px 10px 10px;
 }
 .container .sobre {
-	align-items: center;
+	width: 100%;
+	height: auto;
+	/*align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;*/
 }
 .container .sobre img {
     justify-content: center;
@@ -1003,9 +1005,12 @@ line-height: normal;
 }
 
 .projects-slider .single-project {
-	height: 550px;
+	height: 440px;
 	width: 100%;
-	background: #333;
+	border-radius: 23px;	
+	background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(11.5px);	
 	-o-transition: .8s;
 	transition: .8s;
 	-webkit-transition: .8s;
@@ -1025,6 +1030,11 @@ line-height: normal;
 	opacity: 0;
 }
 
+.projects-slider .single-project .image-client {
+	width: 72px;
+    height: 73px;
+	display: inline-block;
+}
 .projects-slider .single-project .project-content h2 {
 	color: #fff;
 	font-weight: 500;
@@ -1118,11 +1128,26 @@ line-height: normal;
 }
 
 /*----------------------------------------*/
+/*  Projects Section CSS
+/*----------------------------------------*/
+.projects-section {
+	background-image: url(/img/background-cliente.png);	
+}
+.comentario-cliente {
+	padding: 20px;
+}
+.comentario-cliente  img {
+	width: 133.653px;
+    height: 21.673px;
+
+}
+
+
+
+/*----------------------------------------*/
 /*  Client Section CSS
 /*----------------------------------------*/
-.client-section {
-	background-image: url(../img/background-cliente.png);
-}
+
 .client-slider .single-brand {
 	display: table;
 	width: 100%;
@@ -1157,6 +1182,8 @@ line-height: normal;
 .client-slider .single-brand a:hover img {
 	opacity: 1;
 }
+
+
 
 /*----------------------------------------*/
 /*  Footer Section CSS
