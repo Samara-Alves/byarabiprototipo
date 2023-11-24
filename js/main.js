@@ -322,3 +322,19 @@ function portfolio_item_size(){
 		}
 	});
 }
+
+/*------------------
+	Portfolio test 2
+--------------------
+function portfolio_item_size(){
+	$('#portfolio').find('.grid-item').each(function() {
+		var pi_height1 = $(this).outerWidth(true),
+		pi_height2 = pi_height1/2;
+		
+		if($(this).hasClass('grid-long') && window_w > 1200){
+			$(this).css('height', pi_height2);
+		}else{
+			$(this).css('height', Math.abs(pi_height1));
+		}
+	});
+}*/
