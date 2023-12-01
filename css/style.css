@@ -544,8 +544,9 @@ ol {
 /*----------------------------------------*/
 .header-area {
 	position: absolute;
-	background-color: #121212;
 	width: 100%;
+    height: auto;
+	background-color: #121212;
 	top: 0;
 	z-index: 50;
 }
@@ -553,8 +554,9 @@ ol {
 .logo-area {
 	float: left;
 	display: inline-block;
+	vertical-align: bottom;
 	background: #121212;
-	padding: 20px 60px 30px;
+	padding: 20px 20px 10px;
 }
 
 .icon-redessociais {
@@ -570,6 +572,11 @@ ol {
 .icon-redessociais a {
 	color: inherit;
 }
+@media screen and (min-width: 325px) and (max-width: 900px) {
+	.icon-redessociais {
+	  align-items: baseline;
+	}
+  }
 
 .nav-switch {
 	display: none;
@@ -1141,6 +1148,7 @@ line-height: normal;
 	display: flex;
     justify-content: space-between;
 	padding: 10px;
+	gap: 8px;
 }
 .cards  h4 {
 	display: flex;
@@ -1148,8 +1156,7 @@ line-height: normal;
 	padding: 20px;
 }
 
-.image-client img {
-	width: 60%;		
+.image-client img {	
 	display: inline;
     justify-content: space-between;;
     border-radius: 60%;
@@ -2230,7 +2237,7 @@ line-height: normal;
 	}
 	.hero-slider .hero-slide-item {
 		padding: 150px 0;
-		height: auto;
+		/*height: auto;*/
 	}
 	.slide-content h2 {
 		font-size: 60px;

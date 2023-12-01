@@ -44,6 +44,28 @@ $(window).on('load', function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
+		
+	/*------------------
+		start Carrossel
+	--------------------*/
+        $(document).ready(function(){
+            $('.carousel-principal').slick({
+                autoplay: true,
+                autoplaySpeed: 4000, // Tempo de exibição de cada slide em milissegundos
+                dots: true, // Adiciona indicadores de navegação
+                infinite: false, // Permite a rotação contínua
+                speed: 500, // Velocidade da transição entre os slides em milissegundos
+                slidesToShow: 1, // Quantidade de slides a serem exibidos ao mesmo tempo
+                slidesToScroll: 1 // Quantidade de slides a serem avançados/retrocedidos por vez
+            });
+        });
+		
+	/*------------------
+		 end Carrossel
+	--------------------*/
+
+
+
 
 	/*------------------
 		Hero Slider
