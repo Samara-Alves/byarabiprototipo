@@ -6,6 +6,12 @@
 		<meta name="description" content="Arcade - Architecture Template">
 		<meta name="keywords" content="arcade, architecture, onepage, creative, html">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<!-- Carrossel -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 		<!-- Favicon -->
 		<link href="img/logo/logo_byarabi_planejados.png" rel="shortcut icon" />
 
@@ -77,39 +83,44 @@
 						</div>
 					</div>
 				</div>-->
-				<!-- hero slider area -->
-				<div class="hero-slider">
-					<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinha.webp">
-						<!--
-				<div class="slide-inner">
+				<!-- hero slider area -->						
+					<div class="carousel">
+						<div><img src="img/carrosel/cozinha.webp" alt="Imagem 1"></div>
+						<div><img src="img/carrosel/cozinha-_2_.webp" alt="Imagem 2"></div>
+						<div><img src="img/carrosel/cozinhan.webp" alt="Imagem 3"></div>						
+					</div>
+				
+					<!--<div class="hero-slider">
+					<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinha.webp">						
+				    <div class="slide-inner">
 					<div class="slide-content">
 					<h2>Minimalistic <br>Architecture <br> and more</h2>
 					<a href="#" class="site-btn sb-light">See Project</a>
 					</div>	
-				</div>-->
+				</div>
 					</div>
 					<div class="hero-slide-item set-bg"
 						data-setbg="img/carrosel/cozinha-_2_.webp">
-						<!--
+						
 				<div class="slide-inner">
 					<div class="slide-content">
 					<h2>Minimalistic <br>Architecture <br> and more</h2>
 					<a href="#" class="site-btn sb-light">See Project</a>
 					</div>	
-				</div>-->
+				</div>
 					</div>
 
 					<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinhan.webp">
 
 						<div class="slide-inner">
-							<!--
+						
 					<div class="slide-content">
 					<h2>Minimalistic <br>Architecture <br> and more</h2>
 					<a href="#" class="site-btn sb-light">See Project</a>
-					</div>-->
+					</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!--<div class="slide-num-holder" id="snh-1"></div>
 		<div class="hero-right-text">architecture</div>-->
 			</section>
@@ -339,14 +350,15 @@
 								</div>
 
 								<div class="comentario-cliente">
-									<h2>Nilsa Nil</h2>
+									<h2>Thais Regina</h2>
 								</div>
 								<img src="./img/svg/aspas.svg" alt>
 							</div>
 							<div class="feedback">
 								<img src="img/stars/stars.svg" alt>
-								<p>Atendimento exemplar, com simpatia. Projetos inteligente com ênfase
-									no que o cliente deseja… Preço e qualidade incomparáveis… Parabéns!!</p>
+								<p>Fomos bem recepcionados pela equipe By Arabi de Itaquera, o atendimento com o Leonardo foi 10, ele explicou tudo direitinho, nos mostrou a loja, os móveis e seus diferenciais e esclareceu todas as nossas dúvidas.
+									O atendimento da Tais nota 10, super atenciosa e prestativa.
+									Gostei de fazer negócio com eles e não vejo a hora de poder usufruir da minha cozinha.</p>
 							</div>
 						</div>
 					</div>
@@ -359,14 +371,13 @@
 								</div>
 
 								<div class="comentario-cliente">
-									<h2>Marinalva Oliveira Araujo</h2>
+									<h2>Itamara Pereira</h2>
 								</div>
 								<img src="./img/svg/aspas.svg" alt>
 							</div>
 							<div class="feedback">
 								<img src="img/stars/stars.svg" alt>
-								<p>Achei ótimo o produto, o atendimento. Fiquei muito feliz os armários
-									e a cozinha</p>
+								<p>Fomos muito bem recebidos desde o primeiro atendimento, pela Julia (Loja São Miguel), que nos deu toda a atenção necessária, o projeto ficou perfeito atendeu minhas expectativas, entrega e montagem antes do prazo...</p>
 							</div>
 						</div>
 					</div>
@@ -423,13 +434,13 @@
 								</div>
 
 								<div class="comentario-cliente">
-									<h2>Thais Cruz</h2>
+									<h2>Nathan Ursulino</h2>
 								</div>
 								<img src="./img/svg/aspas.svg" alt>
 							</div>
 							<div class="feedback">
 								<img src="img/stars/stars.svg" alt>
-								<p>Entrega no prazo montagem perfeita.</p>
+								<p>Que loja incrivel!! Atendimento excepcional!! Sem dúvidas posso dizer que o projetista Bruno salvou meu projeto e meu apartamento! Recomendo demais!!! Incomparável a qualquer outra loja de Móveis Planejados.</p>
 							</div>
 						</div>
 					</div>
@@ -882,5 +893,25 @@
 			<script src="js/magnific-popup.min.js"></script>
 			<script src="js/circle-progress.min.js"></script>
 			<script src="js/main.js"></script>
+
+
+			<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$('.carousel').slick({
+						autoplay: true,
+						autoplaySpeed: 3000, // Tempo de exibição de cada slide em milissegundos
+						dots: false, // Adiciona indicadores de navegação
+						infinite: true, // Permite a rotação contínua
+						speed: 800, // Velocidade da transição entre os slides em milissegundos
+						slidesToShow: 1, // Quantidade de slides a serem exibidos ao mesmo tempo
+						slidesToScroll: 1 // Quantidade de slides a serem avançados/retrocedidos por vez
+					});
+				});
+			</script>
+		</body>
+		</html>
+		
 		</body>
 	</html>

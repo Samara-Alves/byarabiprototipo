@@ -688,6 +688,10 @@ ol {
 	height: 960px;
 	display: table;
 }
+.carousel {
+	width: 100%;
+	height: auto;
+}
 
 .hero-slider .hero-slide-item .slide-inner {
 	display: table-cell;
@@ -794,8 +798,11 @@ ol {
 /*----------------------------------------*/
 /*  Intro Section CSS
 /*----------------------------------------*/
-.intro-text p {
-	margin-bottom: 50px;
+
+.intro-text  ul li {
+	font-size: 15px;
+	color: #575757;
+	line-height: 2;
 }
 
 /*----------------------------------------*/
@@ -1148,7 +1155,7 @@ line-height: normal;
 	display: flex;
     justify-content: space-between;
 	padding: 10px;
-	gap: 8px;
+	gap: 2px;
 }
 .cards  h4 {
 	display: flex;
@@ -1157,8 +1164,9 @@ line-height: normal;
 }
 
 .image-client img {	
-	display: inline;
-    justify-content: space-between;;
+	display: inline-flex;
+	width: 80%;
+    justify-content: space-between;
     border-radius: 60%;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
@@ -1204,11 +1212,7 @@ line-height: normal;
 	background-position: center;
 }
 .comentario-cliente {
-	padding: 20px;
-}
-.comentario-cliente  img {
-	width: 133.653px;
-    height: 21.673px;
+	padding: 2px 1px;
 }
 
 
@@ -1316,13 +1320,14 @@ line-height: normal;
 /*  Other pages CSS
 /*----------------------------------------*/
 .page-header-section {
-	height: 445px;
-	padding-top: 200px;
+    height: 580px;
+    padding-top: 280px;
 }
 
 .page-header-section .header-title {
 	font-size: 82px;
 	color: #fff;
+	text-shadow: 4px 2px #000;
 }
 
 .page-header-section .header-title span {
