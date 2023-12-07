@@ -49,8 +49,11 @@ h3 {
 	font-family: 'Caviar Dreams';
 }
 #h3 {
+	max-width: 100px;
+	min-height: 200px;
 	font-family: 'Caviar Dreams';
 	font-size: 46px;
+
 }
 
 
@@ -123,6 +126,7 @@ ol {
 .sobre-sessao {			
 	margin: 0;
 	width: auto;
+	min-width: 400px;
 	border-radius: 24px;
     border: 2px solid #2E2E2E;   
     box-shadow: 4px 6px 6px 6px rgba(0, 0, 0, 0.60);
@@ -135,7 +139,7 @@ ol {
 	margin-top: 4%;
 }
 .description {
-	margin: 40px;
+	margin: 10px;
 	display: inline-flex;
     flex-direction: row;
 }
@@ -689,8 +693,9 @@ ol {
 	display: table;
 }
 .carousel {
+	display: flex;
 	width: 100%;
-	height: auto;
+	height: 960px;	
 }
 
 .hero-slider .hero-slide-item .slide-inner {
@@ -808,9 +813,11 @@ ol {
 /*----------------------------------------*/
 /*  Service Section CSS
 /*----------------------------------------*/
-.service-box {
-	margin-bottom: 30px;
+.service-box {	
+	margin-bottom: 20px;
+	flex-wrap: wrap;
 }
+
 
 .service-box .sb-icon {
 	margin-bottom: 30px;
@@ -826,7 +833,7 @@ ol {
 	transition: all 0.4s;
 }
 .servicoSofisticacao {
-	position: '';
+	position: relative;
 	border-radius: 30px;
 	border: 5px solid #EAEAEA;
 	padding: 40px;
@@ -842,7 +849,6 @@ ol {
 }
 
 .service-box .sb-icon .sb-img-icon img {
-	/*opacity: 0.2;*/
 	max-height: 70px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -893,6 +899,22 @@ ol {
 }
 .service-box .servicoSofisticacao {
 	border: 2px solid #000;
+}
+@media all  and (min-width: 320px) and (max-width: 980px) {
+	.service-box {
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 0;
+	}
+		.service-box item {
+			flex: 1;
+			margin: 5px;
+		}
+
+		.service-box #h3 {
+			font-size: 30px;
+		}
+	
 
 }
 
@@ -1011,7 +1033,6 @@ ol {
 color: #FFF;
 font-size: 126px;
 font-weight: 700;
-line-height: normal;
 }
 .contagem p {
 color: #FFF;
@@ -1027,11 +1048,15 @@ line-height: normal;
 	background-color: rgba(227, 169, 0, 1);
 }
 @media only screen and (min-width: 325px) and (max-width: 1199px) {
+	.contagem h2 {
+		font-size: clamp(2em, 2em + 1vw, 1.5em);
+	}
+
 .milestones-section h2 {
-	font-size: 40px;
 	text-align: center;
 	}
-}s
+}
+
 
 /*----------------------------------------*/
 /*  Projects Section CSS
@@ -1319,8 +1344,11 @@ line-height: normal;
 /*----------------------------------------*/
 /*  Other pages CSS
 /*----------------------------------------*/
+#header-section {
+	background-color: #282828 ;
+}
 .page-header-section {
-    height: 580px;
+    /*height: 580px;*/
     padding-top: 280px;
 }
 
