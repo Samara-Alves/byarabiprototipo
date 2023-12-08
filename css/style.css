@@ -39,6 +39,12 @@ h1 span {
 	color: #222222;
 	display: inline-block;
 }
+h2 span {
+	background: #E3A900;
+	padding: 0 10px;
+	color: #222222;
+	display: inline-block;
+}
 
 h2 {
 	font-size: 36px;
@@ -66,10 +72,10 @@ p {
 	color: #575757;
 	line-height: 2;
 }
-
+/*
 img {
 	max-width: 100%;
-}
+}*/
 
 input:focus,
 select:focus,
@@ -158,6 +164,21 @@ ol {
     background: #D9D9D9;
 }
 
+@media only screen and (min-width: 325px) and (max-width: 980px){
+	.description {
+	    max-width: 300px;
+		max-height: 300px;
+		margin: auto;
+	}
+	.description p {
+	overflow: overlay;
+	font-size: 14px;
+	align-items: center;
+}
+
+}
+
+
 
 /*
 .sp-title span {
@@ -196,10 +217,17 @@ ol {
 .mb100 {
 	margin-bottom: 100px;
 }
+.mb40 {
+	margin-bottom: 40px;
+}
+.mb50 {
+	margin-bottom: 50px;
+}
 
 .spad {
 	padding: 100px 0;
 }
+
 
 .section-title {
 	margin-bottom: 75px;
@@ -213,8 +241,7 @@ ol {
 .section-title h2 {
 	display: inline-block;	
 	margin-bottom: 0;
-	font-size: 48px;
-
+	font-size: 48px;	
 }
 .section-title-lojas  {
 	display: inline;	
@@ -804,12 +831,41 @@ ol {
 /*  Intro Section CSS
 /*----------------------------------------*/
 
-.intro-text  ul li {
-	font-size: 15px;
-	color: #575757;
-	line-height: 2;
+.intro-text h2 {
+	text-transform: uppercase;	
+	display: inline-block;
+    margin-bottom: 0;  
 }
 
+.intro-text  ul li {
+	color: #575757;
+	line-height: 2;
+	margin-left: 20px;
+}
+.topicos h4 {
+	font-weight: 700;
+}
+
+.topicos h2 {
+	text-transform: uppercase;	
+	display: inline-block;
+    margin-bottom: 0;  
+}
+.textocuidados {
+	color: #575757;
+}
+.textocuidados h2 {
+	margin-top: 30px;	
+}
+.textocuidados p {
+	line-height: 4;
+}
+
+
+@media only screen and (min-width: 325px) and (max-width: 1200px) {
+
+
+}
 /*----------------------------------------*/
 /*  Service Section CSS
 /*----------------------------------------*/
@@ -919,6 +975,13 @@ ol {
 }
 
 /*----------------------------------------*/
+/*  Texto e imagem
+/*----------------------------------------*/
+.text-image {
+	display: contents;	
+}
+
+/*----------------------------------------*/
 /*  CTA Section CSS
 /*----------------------------------------*/
 .cta-section {
@@ -985,12 +1048,12 @@ ol {
 /*  Milestones Section CSS
 /*----------------------------------------*/
 .milestone {
-	min-height: 110px;
-	padding-left: 43px;
-	padding-top: 15px;
 	position: relative;
+	min-height: 110px;
+	padding-right: 40px;	
+	padding-left: 43px;		
 }
-
+/*
 .milestone h2 {
 	margin-bottom: 0;
 	font-size: 68px;
@@ -999,19 +1062,15 @@ ol {
 	position: relative;
 	z-index: 1;
 }
-
+*/
 .milestone p {
-	float: left;
-	font-size: 20px;
-	margin-top: 10px;
-	margin-left: 10px;
-	line-height: 1.5;
-	position: relative;
-	z-index: 1;
-	font-weight: 500;
+	font-size: 16px;
+    position: relative;
+    text-align: left;
+    line-height: 1.4;
+    font-weight: 500;
 }
-
-.milestone:after {
+/*.milestone:after {
 	position: absolute;
 	content: "";
 	width: 110px;
@@ -1022,7 +1081,7 @@ ol {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-}
+}*/
 
 .contagem {
 	width: 100%;
@@ -1315,6 +1374,7 @@ line-height: normal;
 }
 .footer-item ul {
 	list-style: none;
+	color: #fff;
 }
 
 .footer-item ul li {
@@ -1361,6 +1421,13 @@ line-height: normal;
 .page-header-section .header-title span {
 	background: none;
 	color: #baff00;
+}
+@media only screen and (min-width: 325px) and (max-width: 1199px) {
+	.container .header-title h2{
+		font-size: clamp(2em, 2em + 1vw, 1.5em);
+		max-width: 100px;
+	}
+
 }
 
 /*----------------------------------------*/
@@ -1476,6 +1543,11 @@ line-height: normal;
 
 .promo-text h1 {
 	margin-bottom: 20px;
+}
+
+.promo-text h2 {
+	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 .promo-text p {
@@ -1970,7 +2042,6 @@ line-height: normal;
 	font-style: italic;
 }
 
-
 .map-area {
 	height: 685px;
 	width: 100%;
@@ -1978,6 +2049,60 @@ line-height: normal;
 	background: #f0f0f0;
 	margin-bottom: 2px;
 }
+.cards {
+	display: flex;
+	flex-wrap: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }  
+  .cards_item {
+	display: flex;
+	padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+	.cards_item {
+	  width: 50%;
+	}
+  }
+  
+  @media (min-width: 56rem) {
+	.cards_item {
+	  width: 33.3333%;
+	}
+  }
+  
+  .card {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  }
+  
+  .card_content {
+	padding: 1rem;
+	background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  }
+  
+  .card_title {
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin: 0px;
+  }
+  
+  .card_text {
+	color: #ffffff;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin-bottom: 1.25rem;    
+	font-weight: 400;
+  }
 
 /*----------------------------------------*/
 /*  Portfolio page CSS
@@ -2225,7 +2350,7 @@ line-height: normal;
 		font-size: 45px;
 	}
 	.page-header-section .header-title {
-		font-size: 55px;
+		font-size: 45px;
 	}
 	.left-bar {
 		width: 70px;

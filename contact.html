@@ -35,29 +35,28 @@
 	<!-- Header section start -->   
 	<header class="header-area">
 		<a href="home.html" class="logo-area">
-			<img src="img/logo.png" alt="">
+			<img src="img/logo/logo_byarabi_planejados.png" alt="">
 		</a>
 		<div class="nav-switch">
 			<i class="fa fa-bars"></i>
-		</div>
-		<div class="phone-number">+675 334 567 223</div>
+		</div>		
 		<nav class="nav-menu">
 			<ul>
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About us</a></li>
 				<li><a href="service.html">Services</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
-				<li class="active"><a href="contact.html">Contact</a></li>
+				<li class="active"><a href="contact.html">Orçamento</a></li>
 			</ul>
 		</nav>
 	</header>
-	<!-- Header section end -->   
+	<!-- Header section end -->     
 
 
 	<!-- Page header section start -->
 	<section class="page-header-section set-bg" data-setbg="img/header-bg-2.jpg">
 		<div class="container">
-			<h1 class="header-title">Contact<span>.</span></h1>
+			
 		</div>
 	</section>
 	<!-- Page header section end -->
@@ -67,34 +66,156 @@
 	<section class="page-section pt100">
 		<div class="container pb100">
 			<div class="section-title pt-5">
-				<h1>Get in touch</h1>
+				<h2>Solicite seu orçamento <span>personalizado</span></h2>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 contact-info mb-5 mb-lg-0">
-					<p>Address: 1481 Creekside Lane Avila Beach, CA 93424 </p>
-					<p>Phone: +53 345 7953 32453</p>
-					<p>Email: yourmail@gmail.com</p>
-					<div class="cf-social">
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
+				<div class="col-lg-12 contact-info mb-5 mb-lg-0">
+					<p>Segunda – Sábado 9h – 20h</p>		
+					<div class="cf-social pb50">											
 						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<form class="contact-form">
-						<input type="text" placeholder="Enter your name">
-						<input type="text" placeholder="Enter your email address">
-						<textarea placeholder="Message ..."></textarea>
-						<button class="site-btn sb-dark">Send</button>
-					</form>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>				
+		
+					<div class="form">
+						<div id="sendmessage">Enviado com sucesso!</div>
+						<div id="errormessage"></div>
+						<form action=" " method="POST">
+							<div class="form-row">
+							  <div class="form-group col-md-6">
+								<input type="text" name="nome" class="form-control"
+								  id="nome" placeholder="Nome" data-rule="minlen:4"
+								  data-msg="Please enter at least 4 chars" />
+								<label for="floatingInput"></label></div>
+								<div class="form-group col-md-6">
+									<input class="form-control" name="email"
+									  placeholder="Email" required="">
+									<label for="floatingPassword"></label>
+								  </div>
+								</div>
+								<div class="form-group">
+									<div class="form-floating">
+									  <div class="form-floating">
+										<input class="form-control" id="telefone"
+										  name="telefone" placeholder="Telefone"
+										  required="">
+										<label for="floatingPassword"></label>
+									  </div>
+									  <textarea class="form-control"
+									  placeholder="Quais ambientes?" name="ambientes"
+									  style="height: 100px;" required=""></textarea>
+								  </div>
+								</div>
+								<select class="form-select form-control mb-4"
+								  name="valor" aria-label=".form-select-lg example">
+								  <option selected="">Pretensão de investimento nos
+									móveis</option>
+								  <option value="De R$8.000,00 a R$15.000,00">De
+									R$8.000,00 a R$15.000,00</option>
+								  <option value="De R$15.000,00 a R$30.000,00">De
+									R$15.000,00 a R$30.000,00</option>
+								  <option value="De R$30.000,00 a R$60.000,00">De
+									R$30.000,00 a R$60.000,00</option>
+								  <option value="De R$60.000,00 a R$90.000,00">De
+									R$60.000,00 a R$90.000,00</option>
+								  <option value="Acima De R$100.000,00">Acima De
+									R$100.000,00</option>
+								</select>
+								<textarea class="form-control" placeholder="Observação"
+								  name="observacao" style="height: 150px;" required=""></textarea>
+								<label for="floatingTextarea"></label>
+							  </div>
+							  <br>
+							  <div class="form-group">
+								<!--<div class="validation"></div>-->
+							  </div>
+							  <div id="botao">
+							  <div class="text-center">
+								<button class="btn btn-success py-3" type="submit">Enviar</button></div></div>
+							</form>                
+						  </div>            
+						</div>
 				</div>
 			</div>
 		</div>
-		<div class="map-area" id="map-canvas"></div>
+		<div class="container">
+		<div class="section-title">
+			<h2>Onde estamos</h2>
+			<h3 class="pt40">Visite uma de nossas lojas</h3>
+		</div>
+	</div>
+
+		<ul class="cards">
+			<li class="cards_item">
+			  <div class="card">
+				<div class="card_image"><img src="img/lojas/saomiguel.jpg"></div>
+				<div class="card_content">
+				  <h2 class="card_title">São Miguel</h2>
+				  <p class="card_text">Avenida Nordestina, 280 - São Miguel Paulista – São Paulo SP <br>	
+					(11) 2032-4423
+					(11) 95000-6759											
+				</p>
+				
+				</div>
+			  </div>
+			</li>
+
+			<li class="cards_item">
+				<div class="card">
+				  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+				  <div class="card_content">
+					<h2 class="card_title">Itaquera</h2>
+					<p class="card_text">Rua São Teodoro, 899 - Vila Carmosina – São Paulo SP <br>
+						(11) 2522-2020
+						(11) 95006-7254
+					</p>				
+				  </div>
+				</div>
+			  </li>
+
+			  <li class="cards_item">
+				<div class="card">
+				  <div class="card_image"><img src=""></div>
+				  <div class="card_content">
+					<h2 class="card_title">Santo André </h2>
+					<p class="card_text">Av. Dom Pedro II, 258 - Santo André – São Paulo SP <br>(11) 4437-3527
+						(11) 98995-8986</p>
+					
+				  </div>
+				</div>
+			  </li>
+
+			  <li class="cards_item">
+				<div class="card">
+				  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+				  <div class="card_content">
+					<h2 class="card_title">Tatuapé</h2>
+					<p class="card_text">Rua Itapura, 1412 - Tatuapé – São Paulo SP <br>
+						(11) 2091-0827
+						(11) 93800-2154</p>
+				
+				  </div>
+				</div>
+			  </li>
+			  <li class="cards_item">
+				<div class="card">
+				  <div class="card_image"><img src=""></div>
+				  <div class="card_content">
+					<h2 class="card_title">Pinheiros</h2>
+					<p class="card_text">R Teodoro Sampaio, 1345 - Pinheiros – São Paulo SP <br>
+						(11) 3063-5539
+						(11) 98989-3876</p>
+				
+				  </div>
+				</div>
+			  </li>
+			</ul>						
+	</div>
+
+	
+		<!--<div class="map-area" id="map-canvas"></div>-->
 	</section>
 	<!-- Page section end -->
-
+		
 
 
 	<!-- Footer section start -->
@@ -103,8 +224,8 @@
 			<div class="social-links">
 				<a href="#"><i class="fa fa-pinterest"></i></a>
 				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/byarabiplanejados/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/ByArabiPlanejados/"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 			</div>
 		</div>
@@ -115,46 +236,52 @@
 						<div class="col-md-4">
 							<div class="footer-item">
 								<ul>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Blog</a></li>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">Quem Somos</a></li>
+									<li><a href="#">Projetos</a></li>
+									<li><a href="#">Lojas</a></li>
+									<li><a href="#">Orçamento</a></li>
+									<li><a href="manual.html">Manual de uso</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-6">
 							<div class="footer-item">
+								<p>Contato</p>
 								<ul>
-									<li><a href="#">Terms & Conditions</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Help Desk</a></li>
-									<li><a href="#">Job Aplications</a></li>
-									<li><a href="#">Site Map</a></li>
+									<li><i class="fa fa-whatsapp" aria-hidden="true"></i>(11)
+											95000-6759</li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i>(11)
+											2032-4423</li>
+									<li><i class="fa fa-envelope-o" aria-hidden="true"></i>contato@byarabiplanejados.com.br</li>
+									<li><i class="fa fa-clock-o" aria-hidden="true"></i>Segunda
+											a Sábado das 9h às 20h</li>
+
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="footer-item">
-								<ul>
-									<li><a href="#">Privacy</a></li>
-									<li><a href="#">Contact us</a></li>
-									<li><a href="#">Newsletter</a></li>
-									<li><a href="#">Clients Testimonials</a></li>
-									<li><a href="#">FAQ</a></li>
-								</ul>
-							</div>
-						</div>
+				<!--<div class="col-md-4">
+					<div class="footer-item">
+						<ul>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Newsletter</a></li>
+							<li><a href="#">Clients Testimonials</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>-->
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-     <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.  <br>This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></div>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		<div class="copyright"><img src="./img/logo/logo_byarabi_planejados.png" alt></div>
+		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
 	</footer>
 	<!-- Footer section end -->
-
 
 
 	<!--====== Javascripts & Jquery ======-->
