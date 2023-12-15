@@ -44,10 +44,30 @@ $(window).on('load', function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
-		
 	/*------------------
 		start Carrossel
 	--------------------*/
+	$(document).ready(function(){
+		$('.carousel').slick({
+			autoplay: true,
+						arrows: false,
+						autoplaySpeed: 3000, // Tempo de exibição de cada slide em milissegundos
+						dots: false, // Adiciona indicadores de navegação
+						infinite: true, // Permite a rotação contínua
+						speed: 800, // Velocidade da transição entre os slides em milissegundos
+						slidesToShow: 1, // Quantidade de slides a serem exibidos ao mesmo tempo
+						slidesToScroll: 1 // Quantidade de slides a serem avançados/retrocedidos por vez
+					});
+				});
+		
+/*------------------
+	 end Carrossel
+--------------------*/
+
+		
+	/*------------------
+		start Carrossel
+	--------------------
         $(document).ready(function(){
             $('.carousel-principal').slick({
                 autoplay: true,
@@ -58,11 +78,14 @@ $(window).on('load', function() {
                 slidesToShow: 1, // Quantidade de slides a serem exibidos ao mesmo tempo
                 slidesToScroll: 1 // Quantidade de slides a serem avançados/retrocedidos por vez
             });
-        });
+        });*/
 		
 	/*------------------
 		 end Carrossel
 	--------------------*/
+
+
+		
 
 
 
@@ -347,7 +370,7 @@ function portfolio_item_size(){
 
 /*------------------
 	Portfolio test 2
---------------------
+--------------------*/
 function portfolio_item_size(){
 	$('#portfolio').find('.grid-item').each(function() {
 		var pi_height1 = $(this).outerWidth(true),
@@ -359,4 +382,31 @@ function portfolio_item_size(){
 			$(this).css('height', Math.abs(pi_height1));
 		}
 	});
-}*/
+}
+
+
+/*------------------
+	 Pagination
+--------------------
+
+const portfolio = portfolio_item_size ()
+const state = {
+	page: 1,
+	perPage: 6,
+	totalPage: 0
+}
+
+const controls = {
+	next() {
+		state.page++
+		if(true) {}
+
+	},
+	prev() {},
+	goTo() {},
+
+
+}
+
+
+*/

@@ -262,6 +262,12 @@ ol {
 	font-size: 48px;
 	text-transform: uppercase;
 }
+.section-title-contact h2 {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 40px;
+	text-transform: uppercase;
+}
 
 .section-title-lojas {
 	display: inline;
@@ -523,13 +529,19 @@ ol {
 }
 
 .tab-element .tab-pane h4 {
-	font-size: 18px;
+	font-size: 22px;
 	margin: 25px 0 20px;
 }
 
 .tab-element .tab-pane p {
-	font-size: 14px;
+	font-size: 16px;
+	display: inline-flex;
 }
+.tab-element .tab-pane i {
+	color: rgb(227, 169, 0);
+}
+
+
 
 /*===  Loader ===*/
 .circle-progress {
@@ -1505,10 +1517,10 @@ ol {
 
 /*----------------------------------------*/
 /*  Other pages CSS
-/*----------------------------------------*/
+/*----------------------------------------
 #header-section {
-	background-color: #282828;
-}
+	background-color: #fff1c6;
+}*/
 
 .page-header-section {
 	/*height: 580px;*/
@@ -1939,7 +1951,48 @@ ol {
 	font-size: 48px;
 	color: #baff00;
 }
+/*Pagination Portfolio*/
+#paginate {
+	width: 100%;
+	margin: 32px auto;
+}
 
+#paginate .item {
+	border-bottom: 1px solid hsl(45, 100%, 45%);
+	padding: 16px 32px;
+}
+
+#paginate .item:hover {
+	background-color: rgba(255, 255, 255, 0.04);
+}
+
+#paginate .controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 8px;
+}
+
+#paginate .controls div {
+	cursor: pointer;
+	/*border: 1px solid #000;*/ 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+
+#paginate .controls div:not(.numbers),
+#paginate .controls div.numbers div{
+	width: 40px;
+	height: 40px;
+}
+
+#paginate .controls div.numbers div:hover,
+#paginate .controls div.numbers div.active {
+	color: rgb(227, 169, 0);
+}
+/* Pagination*/
 .search {
 	position: relative;
 }
@@ -2158,6 +2211,55 @@ ol {
 
 .contact-form ::placeholder {
 	font-style: italic;
+}
+
+
+#formulario .form #sendmessage {
+	color: #18d26e;
+	border: 1px solid #18d26e;
+	display: none;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+#formulario .form #errormessage {
+	color: red;
+	display: none;
+	border: 1px solid red;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+#formulario .form #sendmessage.show,
+#formulario .form #errormessage.show,
+#formulario .form .show {
+	display: block;
+}
+
+#formulario .form .validation {
+	color: red;
+	display: none;
+	margin: 0 0 20px;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+#formulario .form input,
+#formulario .form textarea {
+	padding: 10px 14px;
+	border-radius: 0;
+	box-shadow: none;
+	font-size: 15px;
+}
+.contact-info {
+	margin: 18px;	
+}
+.contact-info span {
+	font-size: 16px;
 }
 
 /*
