@@ -112,8 +112,7 @@ ol {
 #quemsomos .image-logo img {
 	width: auto;
 	height: auto;
-	margin-left: 40%;
-	margin-right: 50%;
+	align-items: center;	
 	padding: 20px;
 }
 
@@ -159,7 +158,7 @@ ol {
 
 .description p {
 	color: #fff;
-	margin: 40px;
+	margin: 20px;
 }
 
 
@@ -173,20 +172,27 @@ ol {
 }
 
 @media only screen and (min-width: 325px) and (max-width: 980px) {
+	#quemsomos {
+
+		min-width: 100%;
+	}
+
+
+
+
+	
 	.description {
-		max-width: 300px;
-		max-height: 300px;
-		margin: auto;
+		max-width: 400px;
+		max-height: 400px;	
 	}
 
 	.description p {
 		overflow: overlay;
-		font-size: 14px;
-		align-items: center;
+		font-size: 16px;
+		justify-content: center;	
 	}
-
 	.description img {
-		display: none;
+		max-width: 20vw;
 	}	
 
 }
@@ -700,7 +706,11 @@ ol {
 
 .nav-menu ul li.active>a:after {
 	height: 25px;
-}
+} 
+
+
+
+
 
 /*---------------------------------------*/
 /*  Hero Section CSS
@@ -736,7 +746,6 @@ ol {
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
 }
-
 .social-links a:hover {
 	color: #E3A900;
 }
@@ -760,18 +769,19 @@ ol {
 .hero-slider .hero-slide-item {
 	width: 100%;
 	height: 960px;
-	display: table;
+	display:table;
 }
-
-.carousel {
-	display: flex;
+.carousel  {
+	display: flex;	
 	width: 100%;
-	height: auto;
+	height: 960px;
 }
 
-@media screen and (min-width: 325px) and (max-width: 900px){
+
+@media screen and (min-width: 310px) and (max-width: 900px){
 .carousel , .carousel  img {
-    height: 682px;
+    height: auto;
+	width: 100%;
 }
 .carousel  img {
     width: 100%;
@@ -784,13 +794,15 @@ ol {
 }
 @media (max-width: 991px) {
     .carousel , .carousel  img {
-        height: 482px;
+		width: 100%;
+        height: auto;
     }
 }
 @media (max-width: 767px) {
     .carousel , .carousel  img {
-        height: 382px;
+        height: 100%;
     }
+
  }
 }
 
@@ -1223,6 +1235,85 @@ ol {
 	}
 }
 
+#projetos  h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.container.gallery-container { 
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color:rgb(248, 186, 1);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
 
 /*----------------------------------------*/
 /*  Projects Section CSS
@@ -1515,6 +1606,17 @@ ol {
 	background: #E3A900;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*/
 /*  Other pages CSS
 /*----------------------------------------
@@ -1747,7 +1849,7 @@ ol {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	text-align: center;
 	background: rgba(255, 255, 255, 0.70);
 	border-radius: 29px;
@@ -1866,6 +1968,16 @@ ol {
 .promo-box .promo-text p {
 	color: #fff;
 }
+
+
+
+@media only screen and (min-width: 325px) and (max-width: 900px) {
+	.solid-service-box .image {
+		position: absolute;
+		display: contents;
+	}
+}
+
 
 /*----------------------------------------*/
 /*  Blog page CSS
