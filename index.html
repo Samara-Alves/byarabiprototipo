@@ -42,17 +42,21 @@
 			<i class="fa fa-bars"></i>
 		</div>
 
-		<div class="icon-redessociais">
-			<a href="">
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-		</div>
-
 		<nav class="nav-menu">
 			<ul>
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="quem-somos.html">Quem somos</a></li>			
-				<li><a href="projetos.html">Projetos</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Projetos
+						<i class="fa fa-caret-down"></i>
+					  </button>
+					<div class="dropdown-content">
+						<a href="cozinha.html">Cozinha</a>
+						<a href="dormitorio.html">Dormitórios</a>
+						<a href="closet.html">Closet</a>
+						<a href="home.html">Home</a>
+					</div>
+				</div>			
 				<li><a href="#lojas">Lojas</a></li>
 				<li><a href="manual.html">Manual de uso</a></li>
 				<li><a href="orcamento.html">Orçamento</a></li>
@@ -64,7 +68,7 @@
 
 
 	<!-- Hero section start -->
-	<section class="hero-section">
+	<section class="hero-sectio carousel">
 		<!-- left social link ber
 		<div class="left-bar">
 			<div class="left-bar-content">
@@ -74,21 +78,29 @@
 					<a href="#"><i class="fa fa-instagram"></i></a>
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
+					<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinhaAzulDois.webp">
 				</div>
 			</div>
 		</div> -->
 		<!-- hero slider area -->
-		<div class="carousel hero-slider"> 
-			<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinhaAzulDois.webp">
+		<div class="hero-slider"> 	
+			<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinhaAzulDois.webp"></div>	
+
+					<!--<picture>
+					<source media="(max-width: 800px)" srcset="img/carrosel/cozinha-azul801.jpg">
+					<source media="(max-width: 650px)" srcset="img/carrosel/cozinha-azulMobile.jpg">
+					<source media="(max-width: 465px)" srcset="img/carrosel/cozinha-azulMobile.jpg">
+					<img src="img/carrosel/cozinhaAzulDois.webp" style="width:auto; height: 100%;">
+				  </picture>
 			
-				<!--
+			
 				<div class="slide-inner">
 					<div class="slide-content">
 					<h2>Minimalistic <br>Architecture <br> and more</h2>
 					<a href="#" class="site-btn sb-light">See Project</a>
 					</div>	
 				</div>-->
-			</div>	
+			
 			<div class="hero-slide-item set-bg" data-setbg="img/carrosel/cozinha-_2_.webp">
 				<!--
 				<div class="slide-inner">
@@ -121,8 +133,8 @@
 				<div class="container">
 					
 				
-					<div class="image-logo">
-						<img src="./img/logo.png" alt>
+					<div class="image-logo just">
+						<img src="./logo.svg" alt>
 				
 					</div>
 						<div class="col-12 col-md-11">
@@ -715,8 +727,7 @@
 									<div class="footer-item">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="quem-somos.html">Quem Somos</a></li>
-											<li><a href="portfolio.html">Projetos</a></li>
+											<li><a href="quem-somos.html">Quem Somos</a></li>											
 											<li><a href="index.html#lojas">Lojas</a></li>
 											<li><a href="contact.html">Orçamento</a></li>
 										</ul>
@@ -737,18 +748,7 @@
 										</ul>
 									</div>
 								</div>
-								<!--
-						<div class="col-md-4">
-							<div class="footer-item">
-								<ul>
-									<li><a href="#">Privacy</a></li>
-									<li><a href="#">Contact us</a></li>
-									<li><a href="#">Newsletter</a></li>
-									<li><a href="#">Clients Testimonials</a></li>
-									<li><a href="#">FAQ</a></li>
-								</ul>
-							</div>
-						</div>-->
+								
 							</div>
 						</div>
 					</div>

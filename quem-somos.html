@@ -49,18 +49,23 @@
 				<i class="fa fa-bars"></i>
 			</div>
 
-			<div class="icon-redessociais">
-				<a href>
-					<a href="https://www.instagram.com/byarabiplanejados/"><i class="fa fa-instagram"></i></a>
-					<a href="https://www.facebook.com/ByArabiPlanejados/"><i class="fa fa-facebook"></i></a>
-				</div>
 
 				<nav class="nav-menu">
 					<ul>
 						<li>
 							<a href="index.html">Home</a></li>
 						<li class="active"><a href="quem-somos.html">Quem somos</a></li>
-						<li><a href="projetos.html">Projetos</a></li>
+						<div class="dropdown">
+							<button class="dropbtn">Projetos
+								<i class="fa fa-caret-down"></i>
+							  </button>
+							<div class="dropdown-content">
+								<a href="cozinha.html">Cozinha</a>
+								<a href="dormitorio.html">Dormitórios</a>
+								<a href="closet.html">Closet</a>
+								<a href="home.html">Home</a>
+							</div>
+						</div>	
 						<li><a href="#lojas">Lojas</a></li>
 						<li><a href="manual.html">Manual de uso</a></li>
 						<li><a href="orcamento.html">Orçamento</a></li>
@@ -137,13 +142,15 @@
 						</div>
 					</div>-->
 						</div>
-
-						<div class="col-lg-6 col-md-8">
-							<iframe width="560" height="415" 
-							src="https://www.youtube.com/embed/UjE1ffhlRWg?si=wrZRE1_26q4Zrt0t"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-						</iframe>
+					<div class="col-lg-6 col-md-8">							
+					<div class="video resp-iframe">
+						<div class="video resp-container">
+							<iframe id="player" class="resp-iframe"
+							 src="https://www.youtube.com/embed/UjE1ffhlRWg?si=wrZRE1_26q4Zrt0t" frameborder="0"
+							  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							</iframe>
+						</div>						
+					</div>
 						<!--
 							<h1>A By Arabi</h1>
 							<h2><span>foi fundada em 1987</h2></span>
@@ -176,7 +183,8 @@
 							<p>A fim de superar as expectativas de quem realmente interessa, nossos
 								clientes.</p>
 						</div>
-					</div>-->
+					</div>
+				-->
 				</div>
 			</section>
 			<!-- Intro section end -->
@@ -337,8 +345,7 @@
 								<div class="footer-item">
 									<ul>
 										<li><a href="index.html">Home</a></li>
-										<li><a href="#">Quem Somos</a></li>
-										<li><a href="portfolio.html">Projetos</a></li>
+										<li><a href="#">Quem Somos</a></li>										>
 										<li><a href="index.html#lojas">Lojas</a></li>
 										<li><a href="contact.html">Orçamento</a></li>
 									</ul>

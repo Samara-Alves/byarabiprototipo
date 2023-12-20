@@ -533,6 +533,9 @@ ol {
 .tab-element .nav-tabs .nav-link:hover {
 	border: none;
 }
+.nav-tabs .nav-item {
+	padding: 10px
+}
 
 .tab-element .tab-pane h4 {
 	font-size: 22px;
@@ -547,6 +550,13 @@ ol {
 	color: rgb(227, 169, 0);
 }
 
+@media screen and (min-width: 325px) and (max-width: 900px)  {
+	.tab-pane iframe{
+	position: relative;
+	
+	}
+
+}
 
 
 /*===  Loader ===*/
@@ -616,6 +626,10 @@ ol {
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
+
+
+
+
 
 /*----------------------------------------*/
 /*  Header CSS
@@ -707,8 +721,58 @@ ol {
 .nav-menu ul li.active>a:after {
 	height: 25px;
 } 
+.nav-menu .dropbtn a {
+	float: left;	
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  .dropdown {
+	display: inline-block;
+	font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+  }
 
+  .dropdown .dropbtn {		
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	color: white;
+	padding: 14px 16px;
+	background-color: transparent;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+  }
 
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: #fff;	
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	/*text-align: left;*/
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #e3a900;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
 
 
 
@@ -716,7 +780,8 @@ ol {
 /*  Hero Section CSS
 /*----------------------------------------*/
 .hero-section {
-	height: 960px;
+    max-width: 100%; 
+	height: auto; 	
 	background: #ededed;
 	position: relative;
 }
@@ -774,11 +839,11 @@ ol {
 .carousel  {
 	display: flex;	
 	width: 100%;
-	height: 960px;
+	height: auto; 
 }
 
 
-@media screen and (min-width: 310px) and (max-width: 900px){
+@media screen and (min-width: 310px) and (max-width: 900px) {
 .carousel , .carousel  img {
     height: auto;
 	width: 100%;
@@ -806,24 +871,30 @@ ol {
  }
 }
 
-/*imagem responsiva carrosel
-@media(max-width:767px) {
+/*imagem responsiva carrosel @media(max-width:767px)*/
+
+@media screen and (min-width: 325px) {
 	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
 		width: 100%;
 		height: 240px;
+	
+ }
 }
 
 @media(max-width:450px) {
-	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img{	
 		width: 100%;
 		height: 269px;
+ }
 }
 
 @media(max-width:320px) {
 	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
 		width: 100%;
-		height: 240px;
-}*/
+		height: 240px; 
+ }
+}
+
 
 .hero-slider .hero-slide-item .slide-inner {
 	display: table-cell;
@@ -1083,6 +1154,11 @@ ol {
 
 	.service-box #h3 {
 		font-size: 30px;
+	}
+    .imagem-responsive img {
+		max-width: 100%; 
+        display: block; 
+        height: auto;
 	}
 
 
@@ -1639,14 +1715,33 @@ ol {
 	background: none;
 	color: #baff00;
 }
+.resp-container{
+    position: relative;
+    overflow: hidden;    
+}
+
+.resp-iframe {
+	position: relative;
+    width: 560px;
+	height:415px;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+
 
 @media only screen and (min-width: 325px) and (max-width: 1199px) {
 	.container .header-title h2 {
 		font-size: clamp(2em, 2em + 1vw, 1.5em);
 		max-width: 100px;
 	}
-
+	.resp-iframe {
+		position: relative;
+		width: 100%;
+		/*height:auto;*/
+	}
 }
+
 
 /*----------------------------------------*/
 /*  About page CSS
@@ -1784,6 +1879,8 @@ ol {
 	padding-right: 30px;
 	padding-top: 80px;
 }
+
+
 
 /*----------------------------------------*/
 /*  Service page CSS
