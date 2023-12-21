@@ -46,7 +46,7 @@ $(window).on('load', function() {
 
 	/*------------------
 		start Carrossel
-	--------------------*/
+	--------------------
 	$(document).ready(function(){
 		$('.carousel').slick({
 			autoplay: true,
@@ -54,12 +54,12 @@ $(window).on('load', function() {
 						autoplaySpeed: 3000, // Tempo de exibição de cada slide em milissegundos
 						dots: false, // Adiciona indicadores de navegação
 						infinite: true, // Permite a rotação contínua
+						rtl: true,
 						speed: 800, // Velocidade da transição entre os slides em milissegundos
 						slidesToShow: 1, // Quantidade de slides a serem exibidos ao mesmo tempo
-						slidesToScroll: 1 // Quantidade de slides a serem avançados/retrocedidos por vez
+						slidesToScroll: 1, // Quantidade de slides a serem avançados/retrocedidos por vez										
 					});
-				});
-		
+				});		
 /*------------------
 	 end Carrossel
 --------------------*/
@@ -85,10 +85,12 @@ $(window).on('load', function() {
 	--------------------*/
 
 
-		
-
-
-
+	$(document).ready(function(){
+		// Inicializar o carrossel
+		$('.carousel').carousel({
+			interval: 4000
+		});
+	  });
 
 	/*------------------
 		Hero Slider
