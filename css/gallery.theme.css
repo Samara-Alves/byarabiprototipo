@@ -7,25 +7,33 @@
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
-
 /*
 	Theme controls how everything looks in Gallery CSS.
 */
 .gallery {
   position: relative;
+  width: 100%;
+  width: 100%!important;
+  height: auto;
 }
 .gallery .item {
-  height: 400px;
+  /*height: 400px;*/
+  width: 100%!important;
+  height: 100%!important;
+  background-position: center;
   overflow: hidden;
+  object-fit: cover;
   text-align: center;
-  background: #4d87e2;
+  background: #000000;
 }
+
 .gallery .controls {
   position: absolute;
-  bottom: 0;
+  bottom: 45px;
   width: 100%;
   text-align: center;
 }
+
 .gallery .control-button {
   display: inline-block;
   margin: 0 .02em;

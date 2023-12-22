@@ -1,6 +1,11 @@
+<?php
+session_start();
+$_SESSION["token"] = bin2hex(random_bytes(32));
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
+<head>
 		<title>By Arabi Móveis Planejados | Orçamento</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="By Arabi Planejados - Loja de móveis planejados">
@@ -31,10 +36,9 @@
 		<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+	  	<![endif]-->
 		<!--Recaptcha-->
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body>
 		<!-- Page Preloder -->
@@ -79,10 +83,17 @@
 
 
 
+	<!-- Page header section start -->
+	<section class="page-header-section set-bg">
+		<div class="container">
+			
+		</div>
+	</section>
+	<!-- Page header section end -->
 
 
-	<!-- Page section start -->
-	<section id="formulario" class="page-header-section spad">
+<!-- Page section start -->
+<section id="formulario" class="page-section pt100">
 		<div class="container pb100">
 			<div class="section-title-contact">
 				<h2>Solicite seu orçamento <span>personalizado</span></h2>
@@ -102,7 +113,7 @@
 					<div class="form">
 						<div id="sendmessage">Enviado com sucesso!</div>
 						<div id="errormessage"></div>
-						<form action=" " method="POST">
+						<form action="https://byarabiplanejados.com.br/acesso/cadastrar2.php" method="POST">
 							<div class="form-row">
 							  <div class="form-group col-md-6">
 								<input type="text" name="nome" class="form-control"
@@ -156,7 +167,9 @@
 							  </div>
 							  <div id="botao">
 							  <div class="text-center">
-								<button class="btn btn-success  btn-lg" type="submit">Enviar</button></div></div>
+				
+								
+								<button class="btn btn-success btn-lg" type="submit" onclick="return valida()">Enviar</button></div></div>
 							</form>                
 						  </div>            
 						</div>
@@ -192,7 +205,7 @@
 			</ul>
 			<div class="tab-content" id="myTabContent">
 				<!-- single tab content -->
-				<div class="tab-pane fade show active pb50" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
 					<div class="row">
 						<div class="col-md-6">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0171889390135!2d-46.4450437238856!3d-23.495890359191648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61616283f67b%3A0x70a139714b41a39f!2sAv.%20Nordestina%2C%20280%20-%20S%C3%A3o%20Miguel%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008011-000!5e0!3m2!1spt-BR!2sbr!4v1702651642168!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -204,7 +217,8 @@
 							<p>(11) 95000-6759</p>
 							<i class="fa fa-phone" aria-hidden="true"></i>							
 							<p>(11) 2032-4423</p>
-						</div>						
+						</div>
+						
 					</div>
 				</div>
 				
@@ -223,7 +237,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane fade pb50" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+				<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
 					<div class="row">
 						<div class="col-md-6">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3565211955665!2d-46.45506712388388!3d-23.555635661383427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce668eb8bc7717%3A0xf7e90139f65ae888!2sR.%20S%C3%A3o%20Teodoro%2C%20899%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008290-005!5e0!3m2!1spt-BR!2sbr!4v1702653989590!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -239,7 +253,7 @@
 					</div>
 				</div>
 
-				<div class="tab-pane fade pb50" id="tab-4" role="tabpanel" aria-labelledby="tab-3">
+				<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-3">
 					<div class="row">
 						<div class="col-md-6">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.6374285198!2d-46.535061174388886!3d-23.65315226470997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4293a984c65b%3A0xaf3ef5a2dba6358a!2sBy%20Arabi%20Planejados%20-%20Santo%20Andr%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1702656303501!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -255,7 +269,7 @@
 					</div>
 				</div>
 
-				<div class="tab-pane fade pb50" id="tab-5" role="tabpanel" aria-labelledby="tab-3">
+				<div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-3">
 					<div class="row">
 						<div class="col-md-6">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3565211955665!2d-46.45506712388388!3d-23.555635661383427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce668eb8bc7717%3A0xf7e90139f65ae888!2sR.%20S%C3%A3o%20Teodoro%2C%20899%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008290-005!5e0!3m2!1spt-BR!2sbr!4v1702653989590!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -278,75 +292,6 @@
 </div>
 </div>
 </div>
-	<!-- 
-		<ul class="cards">
-			<li class="cards_item">
-			  <div class="card">
-				<div class="card_image">
-					<img src="img/lojas/saomiguel.jpg"></div>
-				<div class="card_content">
-				  <h2 class="card_title">São Miguel</h2>
-				  <p class="card_text">Avenida Nordestina, 280 - São Miguel Paulista – São Paulo SP <br>	
-					(11) 2032-4423
-					(11) 95000-6759											
-				</p>
-				
-				</div>
-			  </div>
-			</li>
-
-			<li class="cards_item">
-				<div class="card">
-				  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-				  <div class="card_content">
-					<h2 class="card_title">Itaquera</h2>
-					<p class="card_text">Rua São Teodoro, 899 - Vila Carmosina – São Paulo SP <br>
-						(11) 2522-2020
-						(11) 95006-7254
-					</p>				
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="cards_item">
-				<div class="card">
-				  <div class="card_image"><img src=""></div>
-				  <div class="card_content">
-					<h2 class="card_title">Santo André </h2>
-					<p class="card_text">Av. Dom Pedro II, 258 - Santo André – São Paulo SP <br>(11) 4437-3527
-						(11) 98995-8986</p>
-					
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="cards_item">
-				<div class="card">
-				  <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-				  <div class="card_content">
-					<h2 class="card_title">Tatuapé</h2>
-					<p class="card_text">Rua Itapura, 1412 - Tatuapé – São Paulo SP <br>
-						(11) 2091-0827
-						(11) 93800-2154</p>
-				
-				  </div>
-				</div>
-			  </li>
-			  <li class="cards_item">
-				<div class="card">
-				  <div class="card_image"><img src=""></div>
-				  <div class="card_content">
-					<h2 class="card_title">Pinheiros</h2>
-					<p class="card_text">R Teodoro Sampaio, 1345 - Pinheiros – São Paulo SP <br>
-						(11) 3063-5539
-						(11) 98989-3876</p>
-				
-				  </div>
-				</div>
-			  </li>
-			</ul>						
-	</div>-->
-
 	
 		<!--<div class="map-area" id="map-canvas"></div>-->
 	</section>
@@ -432,8 +377,7 @@
 	<script src="js/jquery.owl-filter.js"></script>
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
-	
+	<script src="js/main.js"></script> 
 	<script type="text/javascript">
 		
 		function valida() {
@@ -446,6 +390,7 @@
 		}
 	</script>
 
+	
 	<!-- load for map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
 	<script src="js/map.js"></script>
