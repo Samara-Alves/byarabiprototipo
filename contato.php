@@ -5,304 +5,304 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-		<title>By Arabi Móveis Planejados | Orçamento</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="By Arabi Planejados - Loja de móveis planejados">
-		<meta name="keywords" content="moveis sob medida, moveis planejados, loja de planejados, marcenaria premium, moveis planejados São Paulo, cozinha planejada">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>By Arabi Móveis Planejados | Orçamento</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="By Arabi Planejados - Loja de móveis planejados">
+	<meta name="keywords" content="moveis sob medida, moveis planejados, loja de planejados, marcenaria premium, moveis planejados São Paulo, cozinha planejada">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Carrossel -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<!-- Carrossel -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-		<!-- Favicon -->
-		<link href="img/logo/logo_byarabi_planejados.png" rel="shortcut icon" />
+	<!-- Favicon -->
+	<link href="img/logo/logo_byarabi_planejados.png" rel="shortcut icon" />
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
-			rel="stylesheet">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/animate.css" />
-		<link rel="stylesheet" href="css/owl.carousel.css" />
-		<link rel="stylesheet" href="css/style.css" />
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
-		<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	  	<![endif]-->
-		<!--Recaptcha-->
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	</head>
-	<body>
-		<!-- Page Preloder -->
-		<div id="preloder">
-			<div class="loader"></div>
+	<!--Recaptcha-->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section start -->
+	<header class="header-area">
+		<a href="home.html" class="logo-area">
+			<img src="./img/logo/logobyarabiplanejados.png" alt>
+		</a>
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
 		</div>
 
-		<!-- Header section start -->
-		<header class="header-area">
-			<a href="home.html" class="logo-area">
-				<img src="./img/logo/logobyarabiplanejados.png" alt>
-			</a>
-			<div class="nav-switch">
-				<i class="fa fa-bars"></i>
-			</div>
 
-			
 
-				<nav class="nav-menu">
-					<ul>
-						<li>
-							<a href="index.html">Home</a></li>
-						<li><a href="quem-somos.html">Quem somos</a></li>
-						<div class="dropdown">
-							<button class="dropbtn">Projetos
-								<i class="fa fa-caret-down"></i>
-							  </button>
-							<div class="dropdown-content">
-								<a href="cozinha.html">Cozinha</a>
-								<a href="dormitorio.html">Dormitórios</a>
-								<a href="closet.html">Closet</a>
-								<a href="home.html">Home</a>
-							</div>
-						</div>	
-						<li><a href="#localidades">Lojas</a></li>
-						<li><a href="manual.html">Manual de uso</a></li>
-						<li class="active"><a href="orcamento.html">Orçamento</a></li>
-					</ul>
-				</nav>
-			</header>
-			<!-- Header section end -->
+		<nav class="nav-menu">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li><a href="quem-somos.html">Quem somos</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">Projetos
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="cozinha.html">Cozinha</a>
+						<a href="dormitorio.html">Dormitórios</a>
+						<a href="closet.html">Closet</a>
+						<a href="home.html">Home</a>
+					</div>
+				</div>
+				<li><a href="#localidades">Lojas</a></li>
+				<li><a href="manual.html">Manual de uso</a></li>
+				<li class="active"><a href="orcamento.html">Orçamento</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header section end -->
 
 
 
 	<!-- Page header section start -->
 	<section class="page-header-section set-bg">
 		<div class="container">
-			
+
 		</div>
 	</section>
 	<!-- Page header section end -->
 
 
-<!-- Page section start -->
-<section id="formulario" class="page-section pt100">
+	<!-- Page section start -->
+	<section id="formulario" class="page-section pt100">
 		<div class="container pb100">
 			<div class="section-title-contact">
 				<h2>Solicite seu orçamento <span>personalizado</span></h2>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 contact-info">					
+				<div class="col-lg-12 contact-info">
 					<span> Juntos, vamos encontrar o Planejado perfeito para você! <br></span>
-						<div class="pt50"><p>
-						<strong>Horário de funcionamento:</strong><br> Segunda – Sábado 9h – 20h</p>		
+					<div class="pt50">
+						<p>
+							<strong>Horário de funcionamento:</strong><br> Segunda – Sábado 9h – 20h
+						</p>
 					</div>
 
 					<!--<div class="cf-social pb50">											
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-instagram"></i></a>
-					</div>-->				
-		
+					</div>-->
+
 					<div class="form">
 						<div id="sendmessage">Enviado com sucesso!</div>
 						<div id="errormessage"></div>
 						<form action="https://byarabiplanejados.com.br/acesso/cadastrar2.php" method="POST">
 							<div class="form-row">
-							  <div class="form-group col-md-6">
-								<input type="text" name="nome" class="form-control"
-								  id="nome" placeholder="Nome" data-rule="minlen:4"
-								  data-msg="Please enter at least 4 chars" />
-								<label for="floatingInput"></label></div>
+								<div class="form-group col-md-6">
+									<input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+									<label for="floatingInput"></label>
+								</div>
 
 								<div class="form-group col-md-6">
-									<input class="form-control" name="email"
-									  placeholder="Email" required="">
+									<input class="form-control" name="email" placeholder="Email" required="">
 									<label for="floatingPassword"></label>
-								  </div>
 								</div>
+							</div>
 
-								<div class="form-group">
+							<div class="form-group">
+								<div class="form-floating">
 									<div class="form-floating">
-									  <div class="form-floating">
-										<input class="form-control" id="telefone"
-										  name="telefone" placeholder="Telefone"
-										  required="">
+										<input class="form-control" id="telefone" name="telefone" placeholder="Telefone" required="">
 										<label for="floatingPassword"></label>
-									  </div>
+									</div>
 
-									  <textarea class="form-control"
-									  placeholder="Quais ambientes?" name="ambientes"
-									  style="height: 100px;" required=""></textarea>
-								  </div>
+									<textarea class="form-control" placeholder="Quais ambientes?" name="ambientes" style="height: 100px;" required=""></textarea>
 								</div>
-								<select class="form-select form-control mb-4"
-								  name="valor" aria-label=".form-select-lg example">
-								  <option selected="">Pretensão de investimento nos
+							</div>
+							<select class="form-select form-control mb-4" name="valor" aria-label=".form-select-lg example">
+								<option selected="">Pretensão de investimento nos
 									móveis</option>
-								  <option value="De R$8.000,00 a R$15.000,00">De
+								<option value="De R$8.000,00 a R$15.000,00">De
 									R$8.000,00 a R$15.000,00</option>
-								  <option value="De R$15.000,00 a R$30.000,00">De
+								<option value="De R$15.000,00 a R$30.000,00">De
 									R$15.000,00 a R$30.000,00</option>
-								  <option value="De R$30.000,00 a R$60.000,00">De
+								<option value="De R$30.000,00 a R$60.000,00">De
 									R$30.000,00 a R$60.000,00</option>
-								  <option value="De R$60.000,00 a R$90.000,00">De
+								<option value="De R$60.000,00 a R$90.000,00">De
 									R$60.000,00 a R$90.000,00</option>
-								  <option value="Acima De R$100.000,00">Acima De
+								<option value="Acima De R$100.000,00">Acima De
 									R$100.000,00</option>
-								</select>
-								<textarea class="form-control" placeholder="Observação"
-								  name="observacao" style="height: 150px;" required=""></textarea>
-								<label for="floatingTextarea"></label>
-							  </div>
-							  <br>
-							  <div class="form-group">
-								<!--<div class="validation"></div>-->
-							  </div>
-							  <div id="botao">
-							  <div class="text-center">
-				
-								
-								<button class="btn btn-success btn-lg" type="submit" onclick="return valida()">Enviar</button></div></div>
-							</form>                
-						  </div>            
+							</select>
+							<textarea class="form-control" placeholder="Observação" name="observacao" style="height: 150px;" required=""></textarea>
+							<label for="floatingTextarea"></label>
+					</div>
+					<br>
+					<div class="form-group">
+
+						<!--<div class="form-submit form-group"></div>
+														<div class="validation"></div>-->
+
+						<div class="g-recaptcha" data-sitekey="6LcO2RwoAAAAALDjtzIMLusf2pVbNuOM7EMSTCQy"></div>
+						<div class="text-center">
+							<button type="submit" onclick="return valida()">Enviar</button>
 						</div>
+
+
+						<div class="server-response"></div>
+
+						</form>
+					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 
 		<div id="localidades" class="container">
-		<div class="section-title">
-			<h2>Onde estamos</h2>
-			<h3 class="pt40">Visite uma de nossas lojas</h3>
-		</div>
+			<div class="section-title">
+				<h2>Onde estamos</h2>
+				<h3 class="pt40">Visite uma de nossas lojas</h3>
+			</div>
 
-<div class="row">
-	<div class="col-lg-10">
-		<div class="tab-element">
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">São Miguel</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Tatuapé</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Itaquera</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-3" aria-selected="false">Santo André</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-3" aria-selected="false">Pinheiros</a>
-				</li>
-			</ul>
-			<div class="tab-content" id="myTabContent">
-				<!-- single tab content -->
-				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-					<div class="row">
-						<div class="col-md-6">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0171889390135!2d-46.4450437238856!3d-23.495890359191648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61616283f67b%3A0x70a139714b41a39f!2sAv.%20Nordestina%2C%20280%20-%20S%C3%A3o%20Miguel%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008011-000!5e0!3m2!1spt-BR!2sbr!4v1702651642168!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div class="col-md-4">
-							<h4>São Miguel</h4>
-							<p>Av. Nordestina, 280 | São Miguel. Paulista, São Paulo, SP. 08011-000</p>
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-							<p>(11) 95000-6759</p>
-							<i class="fa fa-phone" aria-hidden="true"></i>							
-							<p>(11) 2032-4423</p>
-						</div>
-						
-					</div>
-				</div>
-				
-				<div class="tab-pane fade pb50" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-					<div class="row">
-						<div class="col-md-6">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3722891813301!2d-46.56520940739544!3d-23.550869128844028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e903a532d59%3A0xc9064e6ef1748d2e!2sR.%20Itapura%2C%201412%20-%20Vila%20Gomes%20Cardim!5e0!3m2!1spt-BR!2sbr!4v1702652188739!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div class="col-md-4">
-							<h4>Tatuapé</h4>
-							<p>Rua Itapura, 1412 | Tatuapé. São Paulo, SP. 03178-200</p>
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-							<p>(11) 93800-2154</p>
-							<i class="fa fa-phone" aria-hidden="true"></i>							
-							<p>(11) 2091-0827</p>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-					<div class="row">
-						<div class="col-md-6">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3565211955665!2d-46.45506712388388!3d-23.555635661383427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce668eb8bc7717%3A0xf7e90139f65ae888!2sR.%20S%C3%A3o%20Teodoro%2C%20899%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008290-005!5e0!3m2!1spt-BR!2sbr!4v1702653989590!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div class="col-md-4">
-							<h4>Itaquera</h4>
-							<p>Rua São Teodoro, 899 - Vila Carmosina – São Paulo SP</p>
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-							<p>(11) 95006-7254</p>
-							<i class="fa fa-phone" aria-hidden="true"></i>						
-							<p>(11) 2522-2020</p>
-						</div>
-					</div>
-				</div>
+			<div class="row">
+				<div class="col-lg-10">
+					<div class="tab-element">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">São Miguel</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Tatuapé</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Itaquera</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-3" aria-selected="false">Santo André</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-3" aria-selected="false">Pinheiros</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<!-- single tab content -->
+							<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+								<div class="row">
+									<div class="col-md-6">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0171889390135!2d-46.4450437238856!3d-23.495890359191648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61616283f67b%3A0x70a139714b41a39f!2sAv.%20Nordestina%2C%20280%20-%20S%C3%A3o%20Miguel%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008011-000!5e0!3m2!1spt-BR!2sbr!4v1702651642168!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									<div class="col-md-4">
+										<h4>São Miguel</h4>
+										<p>Av. Nordestina, 280 | São Miguel. Paulista, São Paulo, SP. 08011-000</p>
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>
+										<p>(11) 95000-6759</p>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<p>(11) 2032-4423</p>
+									</div>
 
-				<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-3">
-					<div class="row">
-						<div class="col-md-6">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.6374285198!2d-46.535061174388886!3d-23.65315226470997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4293a984c65b%3A0xaf3ef5a2dba6358a!2sBy%20Arabi%20Planejados%20-%20Santo%20Andr%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1702656303501!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div class="col-md-4">
-							<h4>Santo André</h4>
-							<p>Av. Dom Pedro II, 258 | Jardim Santo André, SP. 09080-000</p>
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-							<p>(11) 4437-3527</p>
-							<i class="fa fa-phone" aria-hidden="true"></i>						
-							<p>(11) 98995-8986</p>
+								</div>
+							</div>
+
+							<div class="tab-pane fade pb50" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+								<div class="row">
+									<div class="col-md-6">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3722891813301!2d-46.56520940739544!3d-23.550869128844028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e903a532d59%3A0xc9064e6ef1748d2e!2sR.%20Itapura%2C%201412%20-%20Vila%20Gomes%20Cardim!5e0!3m2!1spt-BR!2sbr!4v1702652188739!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									<div class="col-md-4">
+										<h4>Tatuapé</h4>
+										<p>Rua Itapura, 1412 | Tatuapé. São Paulo, SP. 03178-200</p>
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>
+										<p>(11) 93800-2154</p>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<p>(11) 2091-0827</p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+								<div class="row">
+									<div class="col-md-6">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3565211955665!2d-46.45506712388388!3d-23.555635661383427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce668eb8bc7717%3A0xf7e90139f65ae888!2sR.%20S%C3%A3o%20Teodoro%2C%20899%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008290-005!5e0!3m2!1spt-BR!2sbr!4v1702653989590!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									<div class="col-md-4">
+										<h4>Itaquera</h4>
+										<p>Rua São Teodoro, 899 - Vila Carmosina – São Paulo SP</p>
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>
+										<p>(11) 95006-7254</p>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<p>(11) 2522-2020</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-3">
+								<div class="row">
+									<div class="col-md-6">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.6374285198!2d-46.535061174388886!3d-23.65315226470997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4293a984c65b%3A0xaf3ef5a2dba6358a!2sBy%20Arabi%20Planejados%20-%20Santo%20Andr%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1702656303501!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									<div class="col-md-4">
+										<h4>Santo André</h4>
+										<p>Av. Dom Pedro II, 258 | Jardim Santo André, SP. 09080-000</p>
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>
+										<p>(11) 4437-3527</p>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<p>(11) 98995-8986</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-3">
+								<div class="row">
+									<div class="col-md-6">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3565211955665!2d-46.45506712388388!3d-23.555635661383427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce668eb8bc7717%3A0xf7e90139f65ae888!2sR.%20S%C3%A3o%20Teodoro%2C%20899%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008290-005!5e0!3m2!1spt-BR!2sbr!4v1702653989590!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									<div class="col-md-4">
+										<h4>Pinheiros</h4>
+										<p>Rua Teodoro Sampaio, 1345 | Pinheiros. São Paulo, SP. 05405-100</p>
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>
+										<p>(11) 98989-3876</p>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<p>(11) 3063-5539</p>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
-
-				<div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-3">
-					<div class="row">
-						<div class="col-md-6">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3565211955665!2d-46.45506712388388!3d-23.555635661383427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce668eb8bc7717%3A0xf7e90139f65ae888!2sR.%20S%C3%A3o%20Teodoro%2C%20899%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008290-005!5e0!3m2!1spt-BR!2sbr!4v1702653989590!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div class="col-md-4">
-							<h4>Pinheiros</h4>
-							<p>Rua Teodoro Sampaio, 1345 | Pinheiros. São Paulo, SP. 05405-100</p>
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-							<p>(11) 98989-3876</p>
-							<i class="fa fa-phone" aria-hidden="true"></i>						
-							<p>(11) 3063-5539</p>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
-	</div>
-</div>
-</div>
-</div>
-</div>
-	
+		</div>
+		</div>
+
 		<!--<div class="map-area" id="map-canvas"></div>-->
 	</section>
 	<!-- Page section end -->
-		
+
 
 
 	<!-- Footer section start -->
 	<footer class="footer-section">
 		<div class="footer-social">
-			<div class="social-links">		
+			<div class="social-links">
 				<a href="https://www.instagram.com/byarabiplanejados/"><i class="fa fa-instagram"></i></a>
 				<a href="https://www.facebook.com/ByArabiPlanejados/"><i class="fa fa-facebook"></i></a>
 				<a href="https://www.youtube.com/@byarabiplanejados4379"><i class="fa fa-youtube"></i></a>
@@ -316,7 +316,7 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
 							<div class="footer-item">
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a href="quem-somos.html">Quem Somos</a></li>									
+									<li><a href="quem-somos.html">Quem Somos</a></li>
 									<li><a href="#localidades">Lojas</a></li>
 									<li><a href="contact.html">Orçamento</a></li>
 									<li><a href="manual.html">Manual de uso</a></li>
@@ -326,17 +326,18 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
 						<div class="col-md-6">
 							<div class="footer-item">
 								<p>Contato</p>
-								<ul><li><i class="fa fa-whatsapp" aria-hidden="true"></i>(11)95000-6759</li>
+								<ul>
+									<li><i class="fa fa-whatsapp" aria-hidden="true"></i>(11)95000-6759</li>
 									<li><i class="fa fa-phone" aria-hidden="true"></i>(11)
-											2032-4423</li>
+										2032-4423</li>
 									<li><i class="fa fa-envelope-o" aria-hidden="true"></i>contato@byarabiplanejados.com.br</li>
 									<li><i class="fa fa-clock-o" aria-hidden="true"></i>Segunda
-											a Sábado das 9h às 20h</li>
+										a Sábado das 9h às 20h</li>
 
 								</ul>
 							</div>
 						</div>
-				<!--<div class="col-md-4">
+						<!--<div class="col-md-4">
 					<div class="footer-item">
 						<ul>
 							<li><a href="#">Privacy</a></li>
@@ -360,13 +361,13 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
 	<!-- Footer section end -->
 
 
-		<!--====== Botão de whatsApp ======-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<a href="https://wa.me/5511947163733?text=Olá%20vim%20através%20do%20site,%20gostaria%20de%20informações." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+	<!--====== Botão de whatsApp ======-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<a href="https://wa.me/5511947163733?text=Olá%20vim%20através%20do%20site,%20gostaria%20de%20informações." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
 		  z-index:1000;" target="_blank">
 		<i style="margin-top:16px" class="fa fa-whatsapp"></i>
-		</a>
-			<!--====== fim do Botão de whatsApp ======-->
+	</a>
+	<!--====== fim do Botão de whatsApp ======-->
 
 
 	<!--====== Javascripts & Jquery ======-->
@@ -377,9 +378,9 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
 	<script src="js/jquery.owl-filter.js"></script>
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script> 
+	<script src="js/main.js"></script>
+
 	<script type="text/javascript">
-		
 		function valida() {
 
 			if (grecaptcha.getResponse() == "") {
@@ -390,10 +391,11 @@ $_SESSION["token"] = bin2hex(random_bytes(32));
 		}
 	</script>
 
-	
+
 	<!-- load for map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
 	<script src="js/map.js"></script>
 
 </body>
+
 </html>

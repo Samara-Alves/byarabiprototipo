@@ -20,13 +20,31 @@
 	<link rel="stylesheet" href="css/style.css"/>	
 	<link rel="stylesheet" href="css/gallery.theme.css">
     <link rel="stylesheet" href="css/gallery.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+   <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MC7RLW7');</script>
+	<!-- End Google Tag Manager -->
 </head>
+
 <body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC7RLW7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -35,7 +53,7 @@
 	<!-- Header section start -->   
 	<header class="header-area">
 		<a href="home.html" class="logo-area">
-			<img src="./img/logo/logobyarabiplanejados.png" alt>
+			<img src="./img/logo/logo_byarabi_planejados.png" alt>
 		</a>
 		<div class="nav-switch">
 			<i class="fa fa-bars"></i>
@@ -58,13 +76,28 @@
 				</div>			
 				<li><a href="#lojas">Lojas</a></li>
 				<li><a href="manual.html">Manual de uso</a></li>
-				<li><a href="orcamento.html">Orçamento</a></li>				
+				<li><a href="contato.php">Orçamento</a></li>				
 			</ul>
 		</nav>
 	</header>
-	<!-- Header section end -->   
+	<!-- Header section end -->  
 	
-	<!-- Hero section start carousel -->
+
+	<div class="my-slider">
+		<div>
+			<img src="img/carrosel/cozinha-_2_.webp" alt="">
+		</div>
+
+		<div>
+			<img src="img/carrosel/closet.webp" alt="">
+		</div>
+		<div>
+			<img src="img/carrosel/cozinhaAzulUm.webp" alt="">
+		</div>
+	  </div>
+	  <!-- or ul.my-slider > li -->
+	
+	<!-- Hero section start carousel OK
 	<section class="hero-section">		
 		<div class="gallery autoplay items-3">
 			<div id="item-1" class="control-operator"></div>
@@ -89,7 +122,7 @@
                 <a href="#item-3" class="control-button">.</a>
             </div>		
 		</div>	
-</section>
+</section>-->
 	
 <!-- Hero section start carousel 
 	<section class="hero-section">
@@ -618,7 +651,9 @@
 									<p>(11) 2032-4423</p>
 								</div>
 								<div class="map">
-									<a href=""><img src="./img/clients/new-google-maps-icon.png" alt></a>
+									<a href="https://maps.app.goo.gl/3PbpTiqHVTh6dvfb6">
+										<img src="./img/clients/new-google-maps-icon.png" alt>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -641,7 +676,8 @@
 
 								</div>
 								<div class="map">
-									<a href=""><img src="./img/clients/new-google-maps-icon.png" alt></a></div>
+									<a href="https://maps.app.goo.gl/K4crQdjZUV2aeyiW7">
+										<img src="./img/clients/new-google-maps-icon.png" alt></a></div>
 							</div>
 						</div>
 
@@ -660,7 +696,7 @@
 
 								</div>
 								<div class="map">
-									<a href="">
+									<a href="https://maps.app.goo.gl/qksG9gSyTqRs3GED8">
 										<img src="./img/clients/new-google-maps-icon.png" alt></a></div>
 							</div>
 						</div>
@@ -681,7 +717,7 @@
 
 								</div>
 								<div class="map">
-									<a href="">
+									<a href="https://maps.app.goo.gl/hG6K23iL1WXufMkc7">
 										<img src="./img/clients/new-google-maps-icon.png" alt></a>
 									</div>
 							</div>
@@ -704,7 +740,8 @@
 
 								</div>
 								<div class="map">
-									<a href=""><img src="./img/clients/new-google-maps-icon.png" alt></a></div>
+									<a href="https://maps.app.goo.gl/DZqDDivVkBJazk8o6">
+										<img src="./img/clients/new-google-maps-icon.png" alt></a></div>
 							</div>
 						</div>
 
@@ -760,7 +797,8 @@
 											<li><a href="index.html">Home</a></li>
 											<li><a href="quem-somos.html">Quem Somos</a></li>											
 											<li><a href="index.html#lojas">Lojas</a></li>
-											<li><a href="contact.html">Orçamento</a></li>
+											<li><a href="orcamento.html">Orçamento</a></li>
+											<li><a href="manual.html">Manual de Uso</a></li>
 										</ul>
 									</div>
 								</div>
@@ -793,6 +831,13 @@
 			<!-- Footer section end -->
 
 
+	<!--====== Botão de whatsApp ======-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5511947163733?text=Olá%20vim%20através%20do%20site,%20gostaria%20de%20informações." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+     z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+     </a>
+	<!--====== fim do Botão de whatsApp ======-->
 
 
 	<!--====== Javascripts & Jquery ======-->
@@ -804,9 +849,44 @@
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->   
 
+		<script type="module">		
+			var slider = tns({
+			  container: '.my-slider',
+			  items: 1,
+			  slideBy: 'page',
+			  autoplay: true,
+			  mouseDrag: true, // Seta se o carousel pode ser rotacionado com o movimento de clicar e arrastar do mouse
+			  autoplayButtonOutput: false, // Seta visibilidade do botão de auto play
+			  controls: false, // seta visibilidade das setas de controle
+			  nav: true // Seta visibilidade da navegação (3 pontinhos)
+			});
+			var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            responsive: {
+            640: {    
+            gutter: 20,
+            items: 1
+      },
+           700: {
+             gutter: 30
+      },
+            900: {
+             items: 1
+      }
+    }
+  });
+			
+			
+			
+		</script>
+
+	<!---
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
+	
 </body>
 </html>
