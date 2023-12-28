@@ -80,7 +80,23 @@
 			</ul>
 		</nav>
 	</header>
-	<!-- Header section end -->  
+	
+	<!-- Header section end  	
+	<section class="slideshow-container">
+		<ul class="slides">
+			<li class="slide" data-active>
+				<img src="img/carrosel/cozinha-_2_.webp" alt="">
+			</li>
+			<li>
+				<img src="img/carrosel/closet.webp" alt="">
+			</li>
+			<li>
+				<img src="img/carrosel/cozinhaAzulUm.webp" alt="">
+			</li>			
+		</ul>			
+		<button class="previous-button" data-change-slide-button="previous">&lt;</button>
+		<button class="next-button" data-change-slide-button="next">&gt;</button>
+	</section>-->
 	
 
 	<div class="my-slider">
@@ -95,7 +111,7 @@
 			<img src="img/carrosel/cozinhaAzulUm.webp" alt="">
 		</div>
 	  </div>
-	  <!-- or ul.my-slider > li -->
+	
 	
 	<!-- Hero section start carousel OK
 	<section class="hero-section">		
@@ -797,7 +813,7 @@
 											<li><a href="index.html">Home</a></li>
 											<li><a href="quem-somos.html">Quem Somos</a></li>											
 											<li><a href="index.html#lojas">Lojas</a></li>
-											<li><a href="orcamento.html">Orçamento</a></li>
+											<li><a href="contato.php">Orçamento</a></li>
 											<li><a href="manual.html">Manual de Uso</a></li>
 										</ul>
 									</div>
@@ -858,30 +874,24 @@
 			  items: 1,
 			  slideBy: 'page',
 			  autoplay: true,
-			  mouseDrag: true, // Seta se o carousel pode ser rotacionado com o movimento de clicar e arrastar do mouse
+			  mouseDrag: false, // Seta se o carousel pode ser rotacionado com o movimento de clicar e arrastar do mouse
 			  autoplayButtonOutput: false, // Seta visibilidade do botão de auto play
 			  controls: false, // seta visibilidade das setas de controle
-			  nav: true // Seta visibilidade da navegação (3 pontinhos)
-			});
-			var slider = tns({
-            container: '.my-slider',
-            items: 1,
-            responsive: {
-            640: {    
-            gutter: 20,
-            items: 1
-      },
-           700: {
-             gutter: 30
-      },
-            900: {
-             items: 1
-      }
-    }
-  });
+			  nav: false, // Seta visibilidade da navegação (3 pontinhos)	
+			  responsive: {
+				380: {
+                "items": 1,
+				"container": "#center",
+				"center": true
+			    },
+				640: {
+				"items": 1,		
+				"center": true
+				}  				
+			}						   
+	});	
 			
-			
-			
+        			
 		</script>
 
 	<!---
