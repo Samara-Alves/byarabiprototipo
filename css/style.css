@@ -312,9 +312,9 @@ button {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.section-title {
+	/*.section-title {
 		display: inline;
-	}
+	}*/
 	
 	.section-title-contact h2 {
 	margin: 0;
